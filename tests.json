@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "topicId": 1,
+      "questionsIdCollection": [
+        1,
+        2,
+        3
+      ],
+      "name": "Math 1",
+      "isActive": true,
+      "passingGrade": 60,
+      "version": 1,
+      "introText": "bla"
+    },
+    {
+      "id": 2,
+      "topicId": 2,
+      "questionsIdCollection": [
+        16,
+        17,
+        18
+      ],
+      "name": "Trivia 1",
+      "isActive": true,
+      "passingGrade": 60,
+      "version": 1,
+      "introText": "bla"
+    },
+    {
+      "id": 3,
+      "topicId": 1,
+      "questionsIdCollection": [
+        1,
+        2,
+        3
+      ],
+      "name": "Math 2",
+      "isActive": true,
+      "passingGrade": 60,
+      "version": 1,
+      "introText": "bla"
+    }
+  ]
