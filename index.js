@@ -4,6 +4,7 @@ import questionsRoutes from './routes/questions.js';
 import testsRoutes from './routes/tests.js';
 import topicsRoutes from './routes/topics.js';
 import reportsRoutes from './routes/reports.js';
+import studentsRoute from  './routes/students.js';
 import cors from 'cors';
 
 const app = express();
@@ -30,4 +31,6 @@ app.use ('/tests', testsRoutes);
 
 app.use ('/topics', topicsRoutes);
 
-app.use ('/reports', reportsRoutes); 
+app.use ('/reports', reportsRoutes);
+
+app.use('/Students', studentsRoute);

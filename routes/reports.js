@@ -7,7 +7,7 @@ router.get('/bytest/:id', getResultByTestId);
 
 router.get('/testsByTopic/:id', getResultByTopictId);
 
-router.get('/byStudent', getStudents);
+// router.get('/byStudent', getStudents);
 
 router.get('/byStudent/:id', getResultByStudentId);
 
