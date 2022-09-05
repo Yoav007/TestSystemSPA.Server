@@ -44,7 +44,7 @@ export const getTestId = (req, res)=>{
  
  export const editTest = (req, res)=>{
     const { id } = req.params;
-    const { updatedTest } = req.body;
+    const updatedTest = req.body;
     let rawdata = fs.readFileSync('tests.json');
     let tests = JSON.parse(rawdata);
     tests = tests.filter((test)=> test.id !==  id);
