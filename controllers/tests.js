@@ -47,7 +47,7 @@ export const getTestId = (req, res)=>{
     const updatedTest = req.body;
     let rawdata = fs.readFileSync('tests.json');
     let tests = JSON.parse(rawdata);
-    tests = tests.filter((test)=> test.id !==  id);
+    tests = tests.filter((test)=> test.id !== id);
     tests.push(updatedTest); 
     fs.writeFileSync('tests.json',JSON.stringify(tests));
     
