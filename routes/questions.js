@@ -1,4 +1,4 @@
-import express, { application } from 'express';
+import express from 'express';
 import { createQuestion, getQuestions,getQuestionId, deleteQuestion, editQuestion, getQuestionsByTopicId} from '../controllers/questions.js';
 
 const router = express.Router();

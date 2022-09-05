@@ -1,44 +1,369 @@
 [
-    {
-      "id": 1,
-      "topicId": 1,
-      "questionsIdCollection": [
-        1,
-        2,
-        3
-      ],
-      "name": "Math 1",
-      "isActive": true,
-      "passingGrade": 60,
-      "version": 1,
-      "introText": "bla"
-    },
-    {
-      "id": 2,
-      "topicId": 2,
-      "questionsIdCollection": [
-        16,
-        17,
-        18
-      ],
-      "name": "Trivia 1",
-      "isActive": true,
-      "passingGrade": 60,
-      "version": 1,
-      "introText": "bla"
-    },
-    {
-      "id": 3,
-      "topicId": 1,
-      "questionsIdCollection": [
-        1,
-        2,
-        3
-      ],
-      "name": "Math 2",
-      "isActive": true,
-      "passingGrade": 60,
-      "version": 1,
-      "introText": "bla"
-    }
-  ]
+  {
+    "id": "2",
+    "topicId": 2,
+    "questionsIdCollection": [
+      16,
+      17,
+      18
+    ],
+    "name": "Trivia 1",
+    "isActive": true,
+    "passingGrade": 60,
+    "version": 1,
+    "introText": "bla"
+  },
+  {
+    "id": "4",
+    "name": "math 3",
+    "intro": "intro",
+    "authorEmail": "eg@gmail.com",
+    "passGrade": "56",
+    "version": 1,
+    "isActive": false,
+    "questionsIdCollection": [
+      {
+        "isSingle": true,
+        "text": "27/9=?",
+        "topicId": 1,
+        "answers": [
+          {
+            "text": "4",
+            "isCorrect": false
+          },
+          {
+            "text": "3",
+            "isCorrect": true
+          },
+          {
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "text": "10",
+            "isCorrect": false
+          }
+        ],
+        "tags": [
+          "math",
+          "basic",
+          "division",
+          "variables"
+        ],
+        "isActive": false,
+        "id": 11
+      },
+      {
+        "isSingle": true,
+        "text": "10/2=?",
+        "topicId": 1,
+        "answers": [
+          {
+            "text": "4",
+            "isCorrect": false
+          },
+          {
+            "text": "3",
+            "isCorrect": false
+          },
+          {
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "text": "5",
+            "isCorrect": true
+          }
+        ],
+        "tags": [
+          "math",
+          "basic",
+          "division",
+          "variables"
+        ],
+        "isActive": false,
+        "id": 10
+      },
+      {
+        "isSingle": true,
+        "text": "10/5=?",
+        "topicId": 1,
+        "answers": [
+          {
+            "text": "4",
+            "isCorrect": false
+          },
+          {
+            "text": "3",
+            "isCorrect": false
+          },
+          {
+            "text": "2",
+            "isCorrect": true
+          },
+          {
+            "text": "10",
+            "isCorrect": false
+          }
+        ],
+        "tags": [
+          "math",
+          "basic",
+          "division",
+          "variables"
+        ],
+        "isActive": false,
+        "id": 9
+      },
+      {
+        "isSingle": true,
+        "text": "2*5=?",
+        "topicId": 1,
+        "answers": [
+          {
+            "text": "4",
+            "isCorrect": false
+          },
+          {
+            "text": "3",
+            "isCorrect": false
+          },
+          {
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "text": "10",
+            "isCorrect": true
+          }
+        ],
+        "tags": [
+          "math",
+          "basic",
+          "multiplication",
+          "variables"
+        ],
+        "isActive": false,
+        "id": 8
+      }
+    ],
+    "topicId": 1,
+    "successText": "success",
+    "failureText": "failure",
+    "lastUpdate": "5.8.2022, 11:42:28"
+  },
+  {
+    "id": "5",
+    "name": "math check",
+    "intro": "intro check",
+    "authorEmail": "check",
+    "passGrade": "46",
+    "version": 1,
+    "isActive": false,
+    "questionsIdCollection": [
+      {
+        "isSingle": true,
+        "text": "1+1=?",
+        "topicId": 1,
+        "answers": [
+          {
+            "text": "1",
+            "isCorrect": false
+          },
+          {
+            "text": "2",
+            "isCorrect": true
+          },
+          {
+            "text": "3",
+            "isCorrect": false
+          },
+          {
+            "text": "4",
+            "isCorrect": false
+          }
+        ],
+        "tags": [
+          "math",
+          "basic",
+          "addition"
+        ],
+        "isActive": true,
+        "id": 123
+      },
+      {
+        "isSingle": true,
+        "text": "27/9=?",
+        "topicId": 1,
+        "answers": [
+          {
+            "text": "4",
+            "isCorrect": false
+          },
+          {
+            "text": "3",
+            "isCorrect": true
+          },
+          {
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "text": "10",
+            "isCorrect": false
+          }
+        ],
+        "tags": [
+          "math",
+          "basic",
+          "division",
+          "variables"
+        ],
+        "isActive": false,
+        "id": 11
+      },
+      {
+        "isSingle": true,
+        "text": "10/2=?",
+        "topicId": 1,
+        "answers": [
+          {
+            "text": "4",
+            "isCorrect": false
+          },
+          {
+            "text": "3",
+            "isCorrect": false
+          },
+          {
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "text": "5",
+            "isCorrect": true
+          }
+        ],
+        "tags": [
+          "math",
+          "basic",
+          "division",
+          "variables"
+        ],
+        "isActive": false,
+        "id": 10
+      }
+    ],
+    "topicId": 1,
+    "successText": "s",
+    "failureText": "f",
+    "lastUpdate": "5.8.2022, 12:28:59"
+  },
+  {
+    "id": "e6e8a587-e777-44ce-a754-8beb54c70177",
+    "name": "math 2",
+    "intro": "intro",
+    "authorEmail": "email",
+    "passGrade": "34",
+    "version": 1,
+    "isActive": false,
+    "questionsIdCollection": [
+      {
+        "isSingle": true,
+        "text": "1+1=?",
+        "topicId": 1,
+        "answers": [
+          {
+            "text": "1",
+            "isCorrect": false
+          },
+          {
+            "text": "2",
+            "isCorrect": true
+          },
+          {
+            "text": "3",
+            "isCorrect": false
+          },
+          {
+            "text": "4",
+            "isCorrect": false
+          }
+        ],
+        "tags": [
+          "math",
+          "basic",
+          "addition"
+        ],
+        "isActive": true,
+        "id": 123
+      },
+      {
+        "isSingle": true,
+        "text": "27/9=?",
+        "topicId": 1,
+        "answers": [
+          {
+            "text": "4",
+            "isCorrect": false
+          },
+          {
+            "text": "3",
+            "isCorrect": true
+          },
+          {
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "text": "10",
+            "isCorrect": false
+          }
+        ],
+        "tags": [
+          "math",
+          "basic",
+          "division",
+          "variables"
+        ],
+        "isActive": false,
+        "id": 11
+      },
+      {
+        "isSingle": true,
+        "text": "10/2=?",
+        "topicId": 1,
+        "answers": [
+          {
+            "text": "4",
+            "isCorrect": false
+          },
+          {
+            "text": "3",
+            "isCorrect": false
+          },
+          {
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "text": "5",
+            "isCorrect": true
+          }
+        ],
+        "tags": [
+          "math",
+          "basic",
+          "division",
+          "variables"
+        ],
+        "isActive": false,
+        "id": 10
+      }
+    ],
+    "topicId": "1",
+    "successText": "reg",
+    "failureText": "no",
+    "lastUpdate": "5.8.2022, 14:19:40"
+  }
+]
