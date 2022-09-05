@@ -1,7 +1,7 @@
 [
     {
-      "id": 1,
-      "topicId": 1,
+      "id": "1",
+      "topicId": "1",
       "questionsIdCollection": [
         1,
         2,
@@ -14,12 +14,12 @@
       "introText": "bla"
     },
     {
-      "id": 2,
-      "topicId": 2,
+      "id": "2",
+      "topicId": "2",
       "questionsIdCollection": [
-        16,
-        17,
-        18
+        "16",
+        "17",
+        "18"
       ],
       "name": "Trivia 1",
       "isActive": true,
@@ -28,12 +28,12 @@
       "introText": "bla"
     },
     {
-      "id": 3,
-      "topicId": 1,
+      "id": "3",
+      "topicId": "1",
       "questionsIdCollection": [
-        1,
-        2,
-        3
+        "1",
+        "2",
+        "3"
       ],
       "name": "Math 2",
       "isActive": true,
