@@ -1,44 +1,44 @@
 
 [
     {
-      "testId": 1,
-      "studentId": 1,
+      "testId": "1",
+      "studentId": "1",
       "grade": 67,
       "numOfQuestionsAnswered": 3,
       "wrongAnswers": [
         {
-          "questionId": 1,
+          "questionId": "1",
           "answerText": "4"
         }
       ],
       "correctAnswers": [
         {
-          "questionId": 2,
+          "questionId": "2",
           "answerText": "4"
         },
         {
-          "questionId": 3,
+          "questionId": "3",
           "answerText": "2"
         }
       ]
     },
     {
-      "testId": 1,
-      "studentId": 2,
+      "testId": "1",
+      "studentId": "2",
       "grade": 100,
       "numOfQuestionsAnswered": 3,
       "wrongAnswers": [{}],
       "correctAnswers": [
         {
-          "questionId": 1,
+          "questionId": "1",
           "answerText": "2"
         },
         {
-          "questionId": 2,
+          "questionId": "2",
           "answerText": "4"
         },
         {
-          "questionId": 3,
+          "questionId": "3",
           "answerText": "2"
         }
       ]
