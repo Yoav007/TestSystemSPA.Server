@@ -11,7 +11,7 @@ export const getTestId = (req, res)=>{
     const { id } = req.params;
     let rawdata = fs.readFileSync('tests.json');
     let tests = JSON.parse(rawdata); 
-    const selectedTest = tests.find((test)=>test.id == id);
+    const selectedTest = tests.find(test=>test.id == id);
     console.log(selectedTest);
      res.send(selectedTest);
  }
