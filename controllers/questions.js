@@ -36,7 +36,7 @@ export const deleteQuestion = (req, res)=>{
     const { id } = req.params; 
     let rawdata = fs.readFileSync('questions.json');
     let questions = JSON.parse(rawdata);
-    questions = questions.filter((question)=>parseInt(question.id) !== parseInt(id));
+    questions = questions.filter((question)=>question.id !== id);
     fs.writeFileSync('questions.json',JSON.stringify(questions));
      res.send(`The question with id ${id} has been removed from DB`);
  }
@@ -46,7 +46,7 @@ export const deleteQuestion = (req, res)=>{
     const updatedQuestion = req.body; 
     let rawdata = fs.readFileSync('questions.json');
     let questions = JSON.parse(rawdata);
-    questions = questions.filter((question)=>parseInt(question.id) !== parseInt(id));
+    questions = questions.filter((question)=>question.id !== id);
     questions.push(updatedQuestion); 
     fs.writeFileSync('questions.json',JSON.stringify(questions));
     res.send(`Question with the id ${id} has been updated`);

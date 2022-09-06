@@ -1,3 +1,4 @@
+
 import fs from 'fs';
 
 export const getTests = (req, res)=>{
@@ -11,6 +12,7 @@ export const getTestId = (req, res)=>{
     let rawdata = fs.readFileSync('tests.json');
     let tests = JSON.parse(rawdata); 
     const selectedTest = tests.find((test)=>test.id == id);
+    console.log(selectedTest);
      res.send(selectedTest);
  }
 
@@ -36,17 +38,17 @@ export const getTestId = (req, res)=>{
     const { id } = req.params; 
     let rawdata = fs.readFileSync('tests.json');
     let tests = JSON.parse(rawdata);
-    tests = tests.filter((test)=>test.id !== parseInt(id));
+    tests = tests.filter((test)=> test.id !==  id);
     fs.writeFileSync('tests.json',JSON.stringify(tests));
      res.send(`The Test with id ${id} has been removed from DB`);    
  }
  
  export const editTest = (req, res)=>{
     const { id } = req.params;
-    const { updatedTest } = req.body;
+    const updatedTest = req.body;
     let rawdata = fs.readFileSync('tests.json');
     let tests = JSON.parse(rawdata);
-    tests = tests.filter((test)=>parseInt(test.id) !== parseInt(id));
+    tests = tests.filter((test)=> test.id !== id);
     tests.push(updatedTest); 
     fs.writeFileSync('tests.json',JSON.stringify(tests));
     

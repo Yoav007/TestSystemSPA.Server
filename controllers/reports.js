@@ -21,4 +21,12 @@ let rawdata = fs.readFileSync('students.json');
 let students = JSON.parse(rawdata);
 res.send(students);
 }
+
+export const getResultByStudentId = (req, res)=>{
+const id = req.params.id;
+let rawdata = fs.readFileSync('test-results.json');
+let results = JSON.parse(rawdata);
+const stutentResults = results.filter((result)=> result.studentId == id);
+res.send(stutentResults);
+}
     

@@ -36,7 +36,7 @@ export const deleteTopic = (req, res)=>{
     const { id } = req.params; 
     let rawdata = fs.readFileSync('topics.json');
     let topics = JSON.parse(rawdata);
-    topics = topics.filter((topic)=>topic.id !== parseInt(id));
+    topics = topics.filter((topic)=>topic.id !==  id);
     fs.writeFileSync('topics.json',JSON.stringify(topics));
      res.send(`The Topic with id ${id} has been removed from DB`);
  }
@@ -46,7 +46,7 @@ export const deleteTopic = (req, res)=>{
     const { updatedTopic } = req.body;
     let rawdata = fs.readFileSync('topics.json');
     let topics = JSON.parse(rawdata);
-    topics = topics.filter((topic)=>parseInt(topic.id) !== parseInt(id));
+    topics = topics.filter((topic)=> topic.id !==  id);
     topics.push(updatedTopic); 
     fs.writeFileSync('topics.json',JSON.stringify(topics));
    
